@@ -148,6 +148,49 @@ label{
     background-color: rgb(150, 205, 150);
     
 }
+.success-message {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background-color: rgb(17, 60, 31);
+    padding: 15px;
+    border-radius: 10px;
+    height: 70px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.success-message.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.message-container{
+    position: relative;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.title p{
+    color: #fff;
+}
+.desc p{
+    font-size: 13px;
+    margin-top: 0;
+    color: #a8a8a8;
+    font-style: italic;
+    
+}
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
 .general.selected label{
     color: #fff;
 }
